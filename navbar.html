@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: black;
+            background-color: rgb(116, 143, 195);
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        h1 {
+            color: darkolivegreen;
+            font-family: 'Changa', sans-serif;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #fff
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: rgb(220, 220, 220)
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+    </style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Bubble Bobble</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jogo">Jogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="novidades">Novidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Início</h2>
+        </section>
+        <section id="jogo">
+            <h2>Jogo</h2>
+        </section>
+        <section id="novidades">
+            <h2>Novidades</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+    </div>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
