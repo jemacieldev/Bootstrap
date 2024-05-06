@@ -7,10 +7,12 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <style>
-        .navbar-nav .nav-link.active {
+       
+      .navbar-nav .nav-link.active {
             color: black;
             background-color: rgb(116, 143, 195);
         }
+
 
         .nav-link {
             text-align: center;
@@ -32,6 +34,8 @@
             left: 0;
             background-color: rgb(220, 220, 220)
         }
+
+
 
         @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
     </style>
@@ -70,6 +74,24 @@
         </section>
         <section id="jogo">
             <h2>Jogo</h2>
+            <div class="container">
+                <nav class="nav nav-pills" >
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Mapa</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Artefatos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Build</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        Conteúdo da aba Mapa
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        Conteúdo da aba Artefatos
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        Conteúdo da aba Build
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="novidades">
             <h2>Novidades</h2>
@@ -80,4 +102,5 @@
     </div>
     <script src="./bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
