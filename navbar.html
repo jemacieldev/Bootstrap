@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
     <style>
         .navbar-nav .nav-link.active {
             color: black;
@@ -51,16 +51,16 @@
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link active" href="inicio">Início</a>
+                            <a class="nav-link active" href="#inicio">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="jogo">Jogo</a>
+                            <a class="nav-link" href="#jogo">Jogo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="novidades">Novidades</a>
+                            <a class="nav-link" href="#novidades">Novidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contato">Contato</a>
+                            <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </nav>
@@ -122,19 +122,20 @@
 
 
 
-    <script src="./bootstrap.bundle.min.js"></script>
-    <script>
-        const ativadorToast = document.getElementById('btn-checar-emails')
-        const mensagem = document.getElementById('mensagens-alerta')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+    const ativadorToast = document.getElementById('btn-checar-emails')
+    const mensagem = document.getElementById('mensagens-alerta')
 
-        
-        if(ativadorToast){
-            ativadorToast.addEventListener('click', function(){
-                const toast = new bootstrap.Toast(mensagem)
-                toast.show()
-            })
-        }
-    </script>
+
+    if (ativadorToast) {
+        ativadorToast.addEventListener('click', function () {
+            const toast = new bootstrap.Toast(mensagem)
+            toast.show()
+        })
+    }
+</script>
 </body>
 
 </html>

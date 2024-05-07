@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-
 </head>
 
 <body>
@@ -14,44 +13,46 @@
         <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div data-bs-interval="3000" class="carousel-item active">
-                    <img class="d-block" src="https://i.pinimg.com/564x/87/51/82/87518279bfdc4f24ed95660f3973e55e.jpg"
+                    <img class="d-block" src="/lib/images/arte1.jpg"
                         alt="Design 1">
-                </div>
-                <div class="carousel-caption">
-                    <h2>Art Um</h2>
+                    <div class="carousel-caption">
+                        <h2>Arte Um</h2>
+                    </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
-                    <img class="d-block" src="https://i.pinimg.com/564x/d6/aa/df/d6aadfa7128d9f76d805cf5d93392a76.jpg"
+                    <img class="d-block" src="/lib/images/arte2.jpg"
                         alt="Design 2">
-                </div>
-                <div class="carousel-caption">
-                    <h2>Art Dois</h2>
+                    <div class="carousel-caption">
+                        <h2>Arte Dois</h2>
+                    </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
-                    <img class="d-block" src="https://i.pinimg.com/564x/49/bb/82/49bb82bfd3bc65ed5cd0e7dad4223e82.jpg"
+                    <img class="d-block" src="/lib/images/arte3.jpg"
                         alt="Design 3">
+                    <div class="carousel-caption">
+                        <h2>Arte Três</h2>
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h2>Art Três</h2>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                    type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next"
+                    type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active"
+                        data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
                 </div>
-            </div>
-            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-to="0"></button>
-                <button type="button" data-bs-target="#carousel-exemplo" data-bs-to="1"></button>
-                <button type="button" data-bs-target="#carousel-exemplo" data-bs-to="2"></button>
-
             </div>
         </div>
     </div>
 
-
-    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </body>
 
 </html>
